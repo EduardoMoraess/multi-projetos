@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: cadetblue;
+    width: 500px;
+    margin: 120px auto;
+}
+
+.formulario{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.logo-form{
+    background-color: darkgrey;
+    width: 250px;
+    text-align: center;
+    padding: 5px;
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    font-size: 1.1rem;
+}
