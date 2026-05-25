@@ -75,10 +75,47 @@
         </div>
     </section>
 
+    <section class="gerar-protocolo">
+        <div class="container">
+            <h2>Novo Chamado</h2>
+
+            <div class="form-group">
+                <label for="atendente">Nome do Atendente:</label>
+                <input type="text" id="atendente" placeholder="Nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="motivo">Motivo do Chamado:</label>
+                <select id="motivo">
+                    <option value="">Selecione um motivo...</option>
+                    <option value="Suporte">Suporte Técnico</option>
+                    <option value="Financeiro">Financeiro / Cobrança</option>
+                    <option value="Dúvida">Dúvida sobre Produto</option>
+                    <option value="Reclamação">Reclamação</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn-gerar" onclick="registrarChamado()">Gerar Protocolo</button>
+
+            <div id="resultado-protocolo" style="display: none;">
+                <label>Número do Protocolo:</label>
+                <div class="protocolo-container">
+                    <span id="displayProtocolo" class="protocolo-valor"></span>
+                    <button type="button" class="btn-copiar" id="btnCopiar" onclick="copiarProtocolo()">Copiar</button>
+                </div>
+                <span id="feedback-protocolo" class="feedback-copiado">✓ Copiado!</span>
+
+                <p><strong>Atendente:</strong> <span id="displayAtendente"></span></p>
+                <p><strong>Motivo:</strong> <span id="displayMotivo"></span></p>
+            </div>
+        </div>
+    </section>
+
     <!--javascript-->
     <script src="/src/js/calculadoras.js"></script>
     <script src="/src/js/geradorQR.js"></script>
     <script src="/src/js/converterTemp.js"></script>
+    <script src="/src/js/gerarProtocolo.js"></script>
     <!--Biblioteca de QRCODE-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </body>
