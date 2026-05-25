@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dialog {
+    /* Ativa o Flexbox para que justify e align funcionem */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    /* Geometria e Posicionamento */
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    
+    /* Estilização Visual */
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid blue;
+    background-image: url('/src/img/background-matrix.jpg');
+    background-size: cover; /* Garante que a imagem preencha o fundo */
+    background-position: center;
+}
+
+/* Opcional: Estiliza o fundo escurecido atrás do dialog */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item-text{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.btn-item{
+    width: 100px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: #fff;
+    margin: 10px auto;
+}
