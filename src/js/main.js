@@ -1,4 +1,4 @@
-function acessoProjetos()
+/*function acessoProjetos()
 {
     const acesso = document.getElementById('acess');
 
@@ -6,4 +6,6 @@ function acessoProjetos()
         location.href = 'src/pages/multi-projetos.html'
     })
 }
-acessoProjetos()
+acessoProjetos()*/
+
+
